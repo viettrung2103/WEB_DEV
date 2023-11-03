@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Lato;
+  src: url("Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Regular.ttf") format("truetype");
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  background-color: chartreuse;
+}
+
+li a {
+  text-decoration-line: none;
+}
+
+li a:hover {
+  background-color: chocolate;
+}
+
+li a:hover::after {
+  content: " secretlink.com";
+}
+
+main {
+  background-color: darkseagreen;
+}
+
+footer {
+  background-color: chocolate;
+}
