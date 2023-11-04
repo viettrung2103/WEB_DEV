@@ -76,8 +76,22 @@ li a {
   background-color: #bdbdbd;
 }
 
+/* main {
+  background-color: #9e9e9e;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+} */
+
 main {
   background-color: #9e9e9e;
+}
+
+.home-section {
+  margin: auto;
+  /* background-color: #9e9e9e; */
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -97,7 +111,7 @@ section {
   width: 80%;
 }
 
-.section-top-body {
+.section-home-top-body {
   width: 100%;
   height: 0;
 }
@@ -112,6 +126,46 @@ section {
   font-size: 4rem;
   /* text-align: center; */
 /* } */
+
+.contact-section {
+  width: 100%;
+  height: 50vh;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* background-color: yellow; */
+  margin: 0;
+}
+
+.contact-text {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  padding-left: 2rem;
+}
+
+.contact-text p {
+  margin: 0.2rem;
+}
+
+.contact-map {
+  /* box-sizing: border-box; */
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-map img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
 
 section figure {
   width: 100%;
@@ -131,8 +185,11 @@ section p {
 }
 
 footer {
+  /* margin-top: 1rem; */
   background-color: #e0e0e0;
   text-align: center;
+  position: relative;
+  bottom: 0;
 }
 
 footer p {
@@ -170,13 +227,22 @@ footer p a:hover {
     font-size: 1.5rem;
   }
 
-  .section-top-body {
+  .section-home-top-body {
     width: 100%;
     height: 5vh;
   }
   .home-body {
     text-align: center;
     font-size: 2rem;
+  }
+
+  .contact-text {
+    width: 40%;
+  }
+
+  .contact-map {
+    margin-top: 2rem;
+    width: 60%;
   }
   /* 
   article {
