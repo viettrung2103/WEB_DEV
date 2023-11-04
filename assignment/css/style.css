@@ -126,6 +126,43 @@ section {
   font-size: 4rem;
   /* text-align: center; */
 /* } */
+.products-section {
+  padding: 0 2rem 1rem 2rem;
+}
+
+.top-products-section figure {
+  margin: 0 0 1rem 0;
+}
+
+.top-products-section {
+  width: 100%;
+}
+
+#product-banner-desc {
+  padding-top: 1rem;
+}
+
+.bottom-products-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  /* padding: 1rem 2rem 1rem 2rem; */
+  flex-wrap: wrap;
+}
+
+.product-card {
+  box-sizing: border-box;
+  background-color: #e0e0e0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.product-card figure {
+  width: 100%;
+  margin: 0;
+}
 
 .contact-section {
   width: 100%;
@@ -236,6 +273,10 @@ footer p a:hover {
     font-size: 2rem;
   }
 
+  .product-card {
+    width: 30%;
+  }
+
   .contact-text {
     width: 40%;
   }
@@ -244,27 +285,4 @@ footer p a:hover {
     margin-top: 2rem;
     width: 60%;
   }
-  /* 
-  article {
-    width: 50%;
-  }
-
-  li {
-    width: 10rem;
-  }
-
-  section {
-    width: 80%;
-  }
-
-  figure {
-    float: left;
-  }
-  aside {
-    width: 20%;
-  }
-
-  form {
-    width: 40%;
-  } */
 }
