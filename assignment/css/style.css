@@ -10,6 +10,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #e0ffff;
 }
 
 header {
@@ -50,7 +51,6 @@ header li {
   height: 100%;
 
   display: block;
-
 }
 
 .nav-item {
@@ -60,19 +60,15 @@ header li {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-
 }
 li a {
   text-decoration: none;
   color: black;
-
 }
 
 .nav-item:hover {
   background-color: #bdbdbd;
 }
-
-
 
 main {
   background-color: #9e9e9e;
