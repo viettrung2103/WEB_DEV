@@ -17,11 +17,20 @@ header {
   background-color: #e0e0e0;
   display: flex;
   justify-content: space-between;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
 }
 
 header h1 {
   width: 40%;
+}
+
+.header-logo {
+  width: 40%;
+}
+
+.header-logo img {
+  width: 100%;
+  height: auto
 }
 
 header nav {
@@ -190,7 +199,7 @@ figure img {
 
 section p {
   margin-top: 1rem;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 footer {
@@ -228,7 +237,7 @@ footer p a:hover {
   }
 
   header {
-    padding-left: 2rem;
+    /*padding-left: 2rem;*/
   }
 
   .nav-item {
