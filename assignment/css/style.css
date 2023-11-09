@@ -3,9 +3,8 @@
   src: url("/media/Roboto-Regular.ttf") format("truetype");
 }
 
-
 html {
-  font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {

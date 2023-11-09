@@ -1,47 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Result</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/result-css.css" />
+  </head>
 
-<body>
-    <nav>
-        <ul>
-            <li>Font</li>
-            <li>Validator</li>
-            <li>Constrast</li>
-            <li>LightHouse</li>
-        </ul>
-    </nav>
-    <h1>Report</h1>
-    <div class="font-report">
-        <h2>Font</h2>
-        <p>Font is from Google Font: Roboto</p>
-        <pre>
-        @font-face {
-            font-family: Roboto;
-            src: url("/media/Roboto-Regular.ttf") format("truetype");
-        }
-        html {
-            font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
-        }
-    </pre>
+  <body>
+    <div class="container-result">
+      <div class="container-body">
+        <nav class="container-sidebar">
+          <ul class="nav-list">
+            
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#font">Font</a></li>
+            <li class="nav-item"><a href="#validator">Validator</a></li>
+            <li class="nav-item"><a href="#constrast">Constrast</a></li>
+            <li class="nav-item"><a href="#lighthouse">LightHouse</a></li>
+          </ul>
+        </nav>
+        <div class="container-main">
+          <h1 id="home">Report</h1>
+          <section id="font">
+            <h2 header-section>Font</h2>
+            <div class="section-card">
+              <p>Font is from Google Font: Roboto</p>
+              <pre>
+                @font-face {
+                    font-family: Roboto;
+                    src: url("/media/Roboto-Regular.ttf") format("truetype");
+                }
+                html {
+                    font-family: Roboto,Verdana, Geneva, Tahoma, sans-serif;
+                }
+            </pre
+              >
+            </div>
+          </section>
+          <section id="validator">
+            <h2 class="section-header">Validator</h2>
+            <div class="section-body">
+              <article class="section-card">
+                <h3>Home Page</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Validator_Home.png"
+                    alt="home validator"
+                  />
+                  <figcaption>Home Page Validator</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Products Page</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Validator_Products.png"
+                    alt="products validator"
+                  />
+                  <figcaption>Products Page Validator</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Contact Page</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Validator_Contact.png"
+                    alt="contact validator"
+                  />
+                  <figcaption>Contact Page Validator</figcaption>
+                </figure>
+              </article>
+            </div>
+          </section>
+          <section id="constrast">
+            <h2 class="section-header">Constrast</h2>
+            <div class="section-body">
+              <article class="section-card">
+                <h3>Home Page Contrast</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Constrast_Home.png"
+                    alt="home page constrast"
+                  />
+                  <figcaption>Home Page Contrast</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Products Page Contrast</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Constrast_Products.png"
+                    alt="products contrast"
+                  />
+                  <figcaption>Products Page Contrast</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Contact Page Contrast</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Constrast_Contact.png"
+                    alt="contact contrast"
+                  />
+                  <figcaption>Contact Page Contrast</figcaption>
+                </figure>
+              </article>
+            </div>
+          </section>
+          <section id="lighthouse">
+            <h2 class="section-header">Validator</h2>
+            <div class="section-body">
+              <article class="section-card">
+                <h3>Home Page Lighthouse</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Lighthouse_Home.png"
+                    alt="home lighthouse"
+                  />
+                  <figcaption>Home Page Lighthouse</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Products Page Lighthouse</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Lighthouse_Products.png"
+                    alt="products lighthouse"
+                  />
+                  <figcaption>Products Page Lighthouse</figcaption>
+                </figure>
+              </article>
+              <article class="section-card">
+                <h3>Contact Page Lighthouse</h3>
+                <figure>
+                  <img
+                    class="section-img"
+                    src="snapshots/Trung_Doan_Lighthouse_Contact.png"
+                    alt="contact lighthouse"
+                  />
+                  <figcaption>Contact Page Lighthouse</figcaption>
+                </figure>
+              </article>
+            </div>
+          </section>
+          <!-- <section id="constrast"></section>
+          <section id="lighthouse"></section> -->
+          <footer class="container-footer">
+            <p>
+              Created by
+              <span
+                ><a href="https://github.com/viettrung2103">Trung Doan</a></span
+              >
+            </p>
+          </footer>
+        </div>
+      </div>
     </div>
-    <div class="validator">
-
-    </div>
-    <div class="constrast">
-
-    </div>
-    <div class="lighthouse">
-        
-    </div>
-<footer>
-    <p>Created by <span><a href="https://github.com/viettrung2103">Trung Doan</a></span></p>
-</footer>
-</body>
-
+  </body>
 </html>
