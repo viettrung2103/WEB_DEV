@@ -37,9 +37,11 @@ header {
 }
 
 .header-logo img {
-  box-sizing: border-box;
-  width: 100%;
+  width: auto; /* height: ; */
   height: 100%;
+  text-align: center;
+  /* display: block; */
+  /* max-height: 100%; */
 }
 
 header nav {
@@ -52,40 +54,68 @@ header nav {
   /* display: flex;
   justify-content: space-evenly; */
 }
-nav ul {
-  height: 100%;
+.nav-list {
+  width: 60%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex-wrap: wrap;
   /* background-color: yellow; */
-  align-items: center;
+  /* align-items: center; */
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /* margin-left: auto; */
+  /* overflow: hidden; */
 }
 header li {
+  width: 50%;
   box-sizing: border-box;
-  width: calc(100% / 3);
-  height: 100%;
+  /* width: calc(100% / 3); */
+  /* height: 100%; */
 
-  display: block;
+  /* display: block; */
 }
 
-.nav-item {
-  text-align: center;
+/* header li a {
+  display: block;
+} */
 
+.nav-list {
+  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
+  /* padding-right: 0.5rem; */
+  box-sizing: border-box;
 }
 li a {
   text-decoration: none;
   color: black;
 }
 
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+li a :focus {
+  background-color: black;
+  color: white;
+}
+
+/* .nav-item {
+  height: auto;
+} */
+
 .nav-item:hover {
   background-color: #bdbdbd;
+  /* color: white; */
+}
+
+.nav-item a :hover {
+  color: white;
 }
 
 main {
@@ -169,6 +199,7 @@ section {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 0;
+  /* min-height: 100dvh; */
 }
 
 .contact-text {
@@ -249,16 +280,25 @@ footer p a:hover {
   }
 
   header {
-    /*padding-left: 2rem;*/
+    padding-right: 2rem;
   }
   header img {
     width: auto;
     height: 100%;
   }
 
+  /* .nav-list {
+    justify-content: space-between;
+  }
+
   .nav-item {
     font-size: 1.5rem;
-  }
+    width: 30%;
+  } */
+
+  /* .nav-item li {
+    width: calc(100 / 3);
+  } */
 
   .section-home-top-body {
     width: 100%;
@@ -280,5 +320,20 @@ footer p a:hover {
   .contact-map {
     margin-top: 2rem;
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .nav-list {
+    justify-content: space-between;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+
+  header {
+    padding-right: 1rem;
   }
 }

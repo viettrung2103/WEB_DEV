@@ -47,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* flex-wrap: wrap; */
 }
 
 /* .nav-list ul {
@@ -78,9 +79,18 @@ body {
   /* margin-right: 4rem; */
 }
 
-/* .font p,
-pre {
-  padding-left: 1rem;
+#font-link:link {
+  /* background-color: white; */
+  color: red;
+}
+
+#font-link:hover {
+  background-color: black;
+  color: white;
+}
+
+/* #font-link:visited {
+  color: brown;
 } */
 
 .section-card {
