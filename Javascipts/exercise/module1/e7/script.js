@@ -4,7 +4,8 @@ const dice = +prompt("How many dices do you want to throw? ");
 const time = +prompt("How many time do you want to throw? ");
 
 const randomNumber = (min, max) => {
-  const result = Math.floor(Math.random(max + 1 - min)) + min;
+  const result = Math.floor(Math.random() * (max + 1 - min)) + min;
+  // console.log(result);
   return result;
 };
 
@@ -13,8 +14,9 @@ const resultFromThrown = (numberOfDice) => {
   for (let i = 1; i <= numberOfDice; i++) {
     const result = randomNumber(1, 6);
     sum += result;
-    console.log(`Result after throw dice: ${i} is ${sum}`);
+    // console.log(`Result after throw dice: ${i} is ${sum}`);
   }
+  console.log();
   return sum;
 };
 
@@ -28,6 +30,12 @@ const throwDice = (numberOfTime, numberOfDice) => {
   return finalSum;
 };
 
-console.log(randomNumber(1, 6));
+// console.log(randomNumber(1, 6));
 // console.log(resultFromThrown(dice));
-// console.log(throwDice(time, dice));
+const finalResult = throwDice(time, dice);
+const cursorDice = document.querySelector(".dice");
+const cursorTime = document.querySelector(".time");
+const cursorResult = document.querySelector(".result");
+cursorDice.innerHTML = dice;
+cursorTime.innerHTML = time;
+cursorResult.innerHTML = finalResult;
