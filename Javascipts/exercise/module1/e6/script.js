@@ -40,7 +40,7 @@ const main = () => {
     }
   } else {
     const cursorNumber = document.querySelector(".number");
-    cursorNumber.innerHTML = "Thank you for entering my page.";
+    cursorNumber.innerHTML = "The square root is not calculated.";
   }
 };
 
