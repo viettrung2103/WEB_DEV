@@ -15,15 +15,20 @@ const isLeapYear = (year) => {
 const askStartAndEndYear = () => {
   const startYear = +prompt("Type start year:");
   const endYear = +prompt("Type end year:");
+  console.log(`star:${startYear},end: ${endYear}`);
   return [startYear, endYear];
 };
 
 const getYearList = (startYear, endYear) => {
   let yearList = [];
-  for (let i = startYear; i <= endYear; i++) {
-    yearList.push(i);
+  if (startYear === 0 && endYear === 0) {
+    return yearList;
+  } else {
+    for (let i = startYear; i <= endYear; i++) {
+      yearList.push(i);
+    }
+    return yearList;
   }
-  return yearList;
 };
 
 const [startYear, endYear] = askStartAndEndYear();
@@ -33,11 +38,16 @@ const yearList = getYearList(startYear, endYear);
 const leapYearList = yearList.filter(isLeapYear);
 
 const main = () => {
-  leapYearList.forEach((currentYear) => {
-    const el = document.createElement("li");
-    el.innerHTML = currentYear;
-    document.querySelector(".year-list").appendChild(el);
-  });
+  if (leapYearList.length != 0) {
+    leapYearList.forEach((currentYear) => {
+      // console.log(currentYear);
+      const el = document.createElement("li");
+      el.innerHTML = currentYear;
+      document.querySelector(".year-list").appendChild(el);
+    });
+  } else {
+    return;
+  }
 };
 
 main();
