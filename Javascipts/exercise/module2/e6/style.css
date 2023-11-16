@@ -1,0 +1,12 @@
+.dice-list {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.dice-item {
+  width: calc(100% / 3);
+  list-style-type: disc;
+}
