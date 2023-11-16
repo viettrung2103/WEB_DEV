@@ -10,9 +10,14 @@ const isNegative = (number) => {
   return number < 0;
 };
 
-const squareRoot = (number) => {
+const negaTiveResult = (number) => {
   if (isNegative(number)) {
     return "The square root of a negative number is not defined";
+  }
+};
+const squareRoot = (number) => {
+  if (isNegative(number)) {
+    return negaTiveResult;
   } else {
     const result = Math.sqrt(number);
     return result;
@@ -22,12 +27,17 @@ const squareRoot = (number) => {
 const main = () => {
   if (isYes) {
     const num = getNum();
-    const result = squareRoot(num).toFixed(2);
-    console.log(result);
-    const cursorNumber = document.querySelector(".number");
-    const cursorResult = document.querySelector(".result");
-    cursorNumber.innerHTML = `Your number is ${num}`;
-    cursorResult.innerHTML = `The result is ${result}`;
+    if (isNegative(num)) {
+      const resultText = negaTiveResult(num);
+      document.querySelector(".result").innerHTML = resultText;
+    } else {
+      const result = squareRoot(num).toFixed(2);
+      console.log(result);
+      const cursorNumber = document.querySelector(".number");
+      const cursorResult = document.querySelector(".result");
+      cursorNumber.innerHTML = `Your number is ${num}`;
+      cursorResult.innerHTML = `The result is ${result}`;
+    }
   } else {
     const cursorNumber = document.querySelector(".number");
     cursorNumber.innerHTML = "Thank you for entering my page.";
