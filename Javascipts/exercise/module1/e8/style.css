@@ -1,0 +1,9 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  width: calc(100% / 3);
+}
