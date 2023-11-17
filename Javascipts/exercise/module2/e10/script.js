@@ -20,7 +20,7 @@ const createCandidateList = (numberOfCandidate) => {
   let candidateList = [];
   while (i <= numberOfCandidate) {
     const initial = 0;
-    const candidatename = prompt(`Name of candidate: ${i}`).toLowerCase();
+    const candidatename = prompt(`Name for candidate ${i}`).toLowerCase();
     candidateObj = { name: candidatename, votes: initial };
     candidateList.push(candidateObj);
     i++;
@@ -62,7 +62,7 @@ const voteCount = (candidatename, candidateList) => {
 };
 
 const sorting = (candidateList) => {
-  candidateList.sort((a, b) => b > a);
+  candidateList.sort((a, b) => b - a);
   return;
 };
 
@@ -70,13 +70,19 @@ const result = (candidateList) => {
   sorting(candidateList);
   // console.log(candidateList[0]);
   const winner = candidateList[0];
-  console.log(`Winner is ${winner["name"]} with ${winner["votes"]} votes.`);
+  console.log(
+    `The winner is ${winner["name"]} with ${winner["votes"]} vote${
+      winner["votes"] > 1 ? "s" : ""
+    }.`
+  );
+  // console.log(`The winner is ${winner["name"]} with ${winner["votes"]} votes.`);
   return;
 };
 
 const showfinalList = (candidateList) => {
-  console.log(`Result:`);
+  console.log(`results:`);
   for (obj of candidateList) {
+    // console.log(`${obj["name"]}: ${obj["votes"]} votes`);
     console.log(
       `${obj["name"]}: ${obj["votes"]} vote${obj["votes"] > 1 ? "s" : ""}`
     );

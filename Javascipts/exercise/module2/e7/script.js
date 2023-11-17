@@ -15,10 +15,10 @@ const randomNumber = (faces) => {
 const rolling = (faces) => {
   let numList = [];
   let result = randomNumber(faces);
-  while (result !== faces) {
-    numList.push(result);
+  do {
     result = randomNumber(faces);
-  }
+    numList.push(result);
+  } while (result !== faces);
   return numList;
 };
 
