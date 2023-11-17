@@ -52,8 +52,36 @@ const voteCount = (candidatename, candidateList) => {
         objectCandidate["votes"]++;
       }
     }
+  } else {
+    console.log(
+      "The person that you want to vote is not in the list of candidate"
+    );
   }
+
   return candidateList;
+};
+
+const sorting = (candidateList) => {
+  candidateList.sort((a, b) => b > a);
+  return;
+};
+
+const result = (candidateList) => {
+  sorting(candidateList);
+  // console.log(candidateList[0]);
+  const winner = candidateList[0];
+  console.log(`Winner is ${winner["name"]} with ${winner["votes"]} votes.`);
+  return;
+};
+
+const showfinalList = (candidateList) => {
+  console.log(`Result:`);
+  for (obj of candidateList) {
+    console.log(
+      `${obj["name"]}: ${obj["votes"]} vote${obj["votes"] > 1 ? "s" : ""}`
+    );
+  }
+  return;
 };
 
 const initialState = () => {
@@ -64,12 +92,12 @@ const initialState = () => {
   let candidateList = createCandidateList(numOfCandidate);
   // console.log(candidateList);
   // console.log(...candidateList);
-  for (obj of candidateList) {
-    // console.log(obj["name"]);
-    // for (value in obj) {
-    //   console.log(`${value}: ${obj[value]}`);
-    // }
-  }
+  // for (obj of candidateList) {
+  //   console.log(obj["name"]);
+  //   for (value in obj) {
+  //     console.log(`${value}: ${obj[value]}`);
+  //   }
+  // }
   // console.log(candidateList);
 
   const numOfVoter = getNumberOfPeople(voter);
@@ -79,7 +107,8 @@ const initialState = () => {
     console.log(`You have vote: ${candidateName}`);
     candidateList = voteCount(candidateName, candidateList);
   }
-  console.log(candidateList);
+  result(candidateList);
+  showfinalList(candidateList);
 };
 
 initialState();
