@@ -1,9 +1,8 @@
-number = +prompt("Enter number");
+// number = +prompt("Enter number");
 let numberList = [];
-while (number !== 0) {
-  numberList.push(number);
-
+do {
   number = +prompt("Enter number");
-}
+  numberList.push(number);
+} while (number !== 0);
 numberList.sort((a, b) => b > a);
 console.log(numberList);
