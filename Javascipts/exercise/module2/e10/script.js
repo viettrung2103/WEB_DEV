@@ -29,7 +29,7 @@ const createCandidateList = (numberOfCandidate) => {
 };
 
 const getCandidateName = () => {
-  return prompt("Who do you to vote to?");
+  return prompt("Who will you vote for?");
 };
 
 const getCandidateNameList = (list) => {
@@ -61,8 +61,18 @@ const voteCount = (candidatename, candidateList) => {
   return candidateList;
 };
 
+const sortByVote = (current, next) => {
+  if (current["votes"] < next["votes"]) {
+    return 1;
+  } else if (current["votes"] > next["votes"]) {
+    return -1;
+  } else {
+    return 0;
+  }
+};
+
 const sorting = (candidateList) => {
-  candidateList.sort((a, b) => b - a);
+  candidateList.sort(sortByVote);
   return;
 };
 
