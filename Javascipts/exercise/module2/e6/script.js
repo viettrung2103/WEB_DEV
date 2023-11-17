@@ -8,10 +8,10 @@ const randomNumber = () => {
 let numList = [];
 
 let result = randomNumber();
-while (result !== 6) {
-  numList.push(result);
+do {
   result = randomNumber();
-}
+  numList.push(result);
+} while (result !== 6);
 
 numList.forEach((number) => {
   const el = document.createElement("li");
