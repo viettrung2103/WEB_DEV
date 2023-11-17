@@ -5,4 +5,4 @@ do {
   numberList.push(number);
 } while (number !== 0);
 numberList.sort((a, b) => b > a);
-console.log(numberList);
+numberList.forEach((number) => console.log(number));
