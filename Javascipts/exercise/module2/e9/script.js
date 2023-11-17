@@ -10,3 +10,5 @@ const getEvenList = (numList) => {
 console.log(numList);
 const evenList = getEvenList(numList);
 console.log(evenList);
+
+
