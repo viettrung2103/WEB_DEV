@@ -5,7 +5,6 @@ const repeat = (number) => {
   return numList.includes(number);
 };
 
-
 let number = +prompt("Please type a number");
 // numList.push(number)
 while (!isFound) {
@@ -14,5 +13,5 @@ while (!isFound) {
   isFound = repeat(number);
 }
 
-numList.sort((a, b) => a > b);
-console.log(numList);
+numList.sort((a, b) => a - b);
+numList.forEach((number) => console.log(number));
