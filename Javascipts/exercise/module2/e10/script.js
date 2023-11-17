@@ -53,9 +53,9 @@ const voteCount = (candidatename, candidateList) => {
       }
     }
   } else {
-    console.log(
-      "The person that you want to vote is not in the list of candidate"
-    );
+    // console.log(
+    //   "The person that you want to vote is not in the list of candidate"
+    // );
   }
 
   return candidateList;
@@ -104,7 +104,7 @@ const initialState = () => {
   // consol;
   for (let i = 1; i <= numOfVoter; i++) {
     const candidateName = getCandidateName().toLowerCase();
-    console.log(`You have vote: ${candidateName}`);
+    // console.log(`You have vote: ${candidateName}`);
     candidateList = voteCount(candidateName, candidateList);
   }
   result(candidateList);

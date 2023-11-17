@@ -20,4 +20,4 @@ const numList = getNumberList();
 
 reverseList(numList);
 // console.log(numList);
-console.log(numList);
+numList.forEach((currentNumber) => console.log(currentNumber));
