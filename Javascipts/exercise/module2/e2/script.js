@@ -6,8 +6,10 @@ while (i <= count) {
   userList.push(user);
   i++;
 }
-console.log(userList);
+// console.log(userList);
+console.log(userList.sort());
 
+// console.log(userList);
 userList.forEach((user) => {
   const el = document.createElement("li");
   el.innerHTML = user;
