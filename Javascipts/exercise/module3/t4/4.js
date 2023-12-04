@@ -23,4 +23,12 @@ const addItemToTarget = (obj) => {
   target.appendChild(option);
 };
 
-students.forEach((student) => addItemToTarget(student));
+for (let i = 0; i < students.length; i++) {
+  addItemToTarget(students[i]);
+}
+
+// for (let student of students) {
+//   addItemToTarget(student);
+// }
+
+// students.forEach((student) => addItemToTarget(student));

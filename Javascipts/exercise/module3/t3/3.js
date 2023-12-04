@@ -7,6 +7,6 @@ const element = document.querySelector("#target");
 for (const user of names) {
   // console.log(user);
   const newLi = document.createElement("li");
-  newLi.textContent = user;
+  newLi.innerHTML = user;
   element.appendChild(newLi);
 }
