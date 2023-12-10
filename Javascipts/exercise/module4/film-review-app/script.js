@@ -57,10 +57,6 @@ const displayData = (shows) => {
     article.appendChild(p);
     article.appendChild(div);
     result.appendChild(article);
-    console.log(name);
-    console.log(url);
-    console.log(image);
-    console.log(summary);
   }
   return;
 };
