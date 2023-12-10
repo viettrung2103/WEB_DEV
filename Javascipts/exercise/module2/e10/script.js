@@ -36,14 +36,7 @@ const getCandidateNameList = (list) => {
   return list.map((candidateObject) => candidateObject["name"]);
 };
 
-// let candidateList = [];
-// const isExist = (candidateName, candidateList) => {
-//   const isExist = candidateList.includes(candidateName)
-//   if (isExist) {
-//     const index =
-//   }
-//   return candidateList.includes(candidateName);
-// };
+
 
 const voteCount = (candidatename, candidateList) => {
   if (candidatename != "") {
