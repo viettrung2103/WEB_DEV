@@ -38,7 +38,7 @@ const execute = () => {
 };
 
 const button = document.querySelector("button");
-button;
+// button;
 const result = button.addEventListener("click", execute);
 console.log(`this is result: ${result}`);
 // document.querySelector("#result").innerHTML = result;
